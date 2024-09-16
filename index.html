@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pigmalion Software Challenge Junior</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div>
+            <h1>Pigmalion Software Challenge Junior</h1>
+            <h3>Cuello Daniel Gustavo</h3>
+    </div>
+
+
+    <!-- Resultados fijos -->
+    <div>
+        <h2>Solución Básica - Reto N°1</h2>
+        <p id="resultado-basico"></p>
+    </div>
+    
+    <div>
+        <h2>Solución Optimizada - Reto N°2</h2>
+        <p id="resultado-optimizado"></p>
+    </div>
+
+    <!-- Campo para ingresar la suma requerida y seleccionar la versión -->
+    <div>
+        <h2>Desafió Personal Extra</h2>
+        <h3>Ingresa la suma requerida y elige la versión</h3>
+        <input type="number" id="suma-requerida" placeholder="Ingresa un número">
+        <select id="version">
+            <option value="basico">Básica</option>
+            <option value="optimizada">Optimizada</option>
+        </select>
+        <button onclick="calcularResultado()">Calcular</button>
+    </div>
+
+    <!-- Resultados dinámicos -->
+    <div>
+        <h2>Resultados</h2>
+        <p id="resultado-dinamico"></p>
+    </div>
+
+    <script src="solucion-1.js"></script>
+    <script src="solucion-2.js"></script>
+    <script src="resultados.js"></script>
+    <script src="extra.js"></script>
+
+</body>
+</html>
